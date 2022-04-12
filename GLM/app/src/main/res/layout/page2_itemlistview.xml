@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:weightSum="4">
+    <CheckBox
+        android:id="@+id/checkItem"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/itemTypeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:gravity="bottom"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingTop="1dp"
+            tools:text="Type #1"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="24sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            tools:text="Item #1"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/quantity"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+            tools:text="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2">
+            <ImageButton
+                android:id="@+id/subtractQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_minus"
+                android:background="@color/colorDefaultBackground"
+                android:tint="@color/colorRedDelete"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/addQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_plus"
+                android:tint="@color/colorGreen"
+                android:background="@color/colorDefaultBackground"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/deleteItemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/colorDefaultBackground"
+        android:tint="@color/colorRedDelete"
+        app:srcCompat="@drawable/ic_remove"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create A New List"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New list name"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_input"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="Back"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_back"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="Create"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_create"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

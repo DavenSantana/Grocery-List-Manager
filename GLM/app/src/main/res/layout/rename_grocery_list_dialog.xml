@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter a new name:"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New list name"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/input_new_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="Cancel"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_rename_cancel"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:text="Done"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:id="@+id/btn_rename_done"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
